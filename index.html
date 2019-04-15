@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Untitled Document</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet" />
+</head>
+
+<body>
+  <!--  -->
+  <!-- body code goes here -->
+  <div class="page-wrapper">
+    <header class="top-header">
+      <div class="top-banner">
+        <div id="logo">
+          <img src="images/logo-compass.png" width="180" height="102" alt="" />
+          <h1>Lorem ipsum</h1>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-ul">
+          <li><a id="home-link" href="#">home</a></li>
+          <li><a id="about-link" href="#about">about</a></li>
+          <li><a id="gallery-link" href="#gallary">gallery</a></li>
+          <li><a id="media-link" href="#media">media</a></li>
+          <li><a id="contact-link" href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section class="content">
+      <article class="topic-one">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="article1">
+              <img src="images/500_F_135414816_VblqKqicMwTu0H65Jng7JN32WDNksrcD.jpg" alt="" />
+              <h1>
+                Lorem ipsum dolor sit amet.
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Vel consequatur, neque beatae rerum. Repudiandae, laborum,
+                provident. Quos possimus, dolore. Soluta optio, suscipit,
+                perspiciatis, dignissimos adipisci eius velit omnis quod
+                neque, accusantium numquam impedit dolores! Beatae
+                accusantium totam aspernatur inventore in doloribus
+                excepturi quia impedit possimus molestias, eligendi
+                consequuntur voluptates minus ab fuga dignissimos
+                perferendis porro maxime suscipit mollitia. Hic labore
+                debitis voluptatibus impedit iure maxime consequuntur,
+                consectetur sunt. Architecto qui nostrum nulla corporis
+                vitae perferendis eum, nisi soluta, tenetur velit voluptas
+                veniam perspiciatis neque voluptates, magnam ipsum obcaecati
+                distinctio. Ut pariatur obcaecati, non asperiores modi quos
+                dicta, ratione facere. Nemo porro consequatur adipisci
+                aspernatur, ab, amet id esse
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <div class="article1">
+              <img src="images/hero-image.jpg" alt="" />
+              <h1>
+                Lorem ipsum dolor sit amet.
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Vel consequatur, neque beatae rerum. Repudiandae, laborum,
+                provident. Quos possimus, dolore. Soluta optio, suscipit,
+                perspiciatis, dignissimos adipisci eius velit omnis quod
+                neque, accusantium numquam impedit dolores! Beatae
+                accusantium totam aspernatur inventore in doloribus
+                excepturi quia impedit possimus molestias, eligendi
+                consequuntur voluptates minus ab fuga dignissimos
+                perferendis porro maxime suscipit mollitia. Hic labore
+                debitis voluptatibus impedit iure maxime consequuntur,
+                consectetur sunt. Architecto qui nostrum nulla corporis
+                vitae perferendis eum, nisi soluta, tenetur velit voluptas
+                veniam perspiciatis neque voluptates, magnam ipsum obcaecati
+                distinctio. Ut pariatur obcaecati, non asperiores modi quos
+                dicta, ratione facere. Nemo porro consequatur adipisci
+                aspernatur, ab, amet id esse
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </div>
+  <section id="footer-section">
+    <div class="container-fluid">
+      <div class="footer-banner">
+        <div class="clip-path-right"></div>
+        <div class="clip-path-left"></div>
+        <div class="footer-bgcolor">
+          <div class="footer-detail">
+            <div class="row">
+              <div class="col-12">
+                <!-- <a class="social-media media-git"  href="bushrazafar6789@gmail.com"><i class="fa fa-envelope"></i> </a> -->
+                <a class="social-media media-git" href="https://github.com/bushra-javed/"><i class="fa fa-git"></i>
+                </a>
+                <a class="social-media media-git" href="bushra"><i class="fa fa-facebook"></i>
+                </a>
+                <!-- <a class="social-media media-git"  href="bushrazafar6789@gmail.com"><i class="fa fa-envelope"></i> </a> -->
+                <!-- <a class="social-media media-git" href=""><i class="fa fa-facebook"></i> </a> -->
+              </div>
+
+              <div class="col-12">
+                <img src="images/logo.png" width="100px" ; />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bottom-footer container-fluid">
+    © 2018 Bushra All Rights Reserved
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+  <script>
+    var link1 = $("#home-link");
+    var link2 = $("#about-link");
+    var link3 = $("#gallery-link");
+    var link4 = $("#media-link");
+    var link5 = $("#contact-link");
+
+
+    link1.bind('click', fun1);
+
+    function fun1() {
+      $(".content").load("page1.html");
+    };
+
+
+    var link2 = $("#about-link");
+    link2.bind('click', fun2);
+
+    function fun2() {
+      $(".content").load("page2.html");
+    };
+
+    //
+
+
+    link3.bind('click', fun3);
+
+    function fun3() {
+      $(".content").load("page3.html");
+    };
+
+    //
+
+    link4.bind('click', fun4);
+
+    function fun4() {
+      $(".content").load("page4.html");
+    };
+  </script>
+</body>
+
+</html>
